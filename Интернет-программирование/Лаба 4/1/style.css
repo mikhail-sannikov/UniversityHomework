@@ -1,0 +1,16 @@
+p {
+    color: green;
+}
+
+tr#fullname {
+    color: purple;
+}
+
+td#table_name {
+    color: black;
+}
+
+
+.students {
+    color: darkblue;
+}

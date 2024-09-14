@@ -1,0 +1,27 @@
+div {
+    text-indent: 3em;
+    text-align: justify;
+
+    margin-bottom: 20px;
+    color: gray;
+}
+
+div::first-letter {
+    font-size: 20px;
+}
+
+div#header {
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 2px 2px 0 #333, 1px 1px 0 #fff;
+
+    margin-bottom: 0px;
+    letter-spacing: 2px;
+}
+
+div#under_header {
+    text-align: center;
+    text-decoration: underline;
+
+    white-space: nowrap;
+}
