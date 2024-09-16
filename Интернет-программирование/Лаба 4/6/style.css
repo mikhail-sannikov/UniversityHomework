@@ -1,0 +1,12 @@
+#link_1:hover {
+    color: red;
+    opacity: 50%;
+}
+
+#link_2:active {
+    color: green;
+}
+
+#link_3:visited {
+    color: orangered;
+}

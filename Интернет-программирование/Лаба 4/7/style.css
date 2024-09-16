@@ -1,0 +1,3 @@
+a[href$=".zip"]::after {
+    content: "↓";
+}
