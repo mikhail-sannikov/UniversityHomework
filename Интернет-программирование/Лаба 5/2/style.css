@@ -1,0 +1,32 @@
+.announcement {
+    width: 300px;
+    height: 535px;
+    border: 2px solid black;
+    box-shadow: 5px 5px gray;
+    margin: 10px;
+    float: left;
+}
+
+.announcement__image {
+    width: inherit;
+    height: calc(100% - 85px);
+}
+
+.announcement__image:hover {
+    opacity: 70%;
+}
+
+.announcement__text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.announcement__text:hover {
+    overflow: scroll;
+    color: red;
+}
+
+.clearfix {
+    clear: both;
+}

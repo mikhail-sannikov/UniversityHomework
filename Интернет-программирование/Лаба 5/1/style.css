@@ -1,0 +1,24 @@
+.nav {
+    border: 3px solid bisque;
+    background-color: goldenrod;
+    box-shadow: 5px 5px gray;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.links {
+    text-decoration: none;
+    background-color: gold;
+    margin-left: 8px;
+    padding: 5px;
+    display: block;
+    float: left;
+}
+
+.links:hover {
+    background-color: goldenrod;
+}
+
+.clearfix {
+    clear: both;
+}
