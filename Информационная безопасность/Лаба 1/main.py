@@ -1,33 +1,24 @@
-from time import perf_counter
-from typing import Callable
-from random import randrange
 from math import log
+from random import randrange
+
+from utils.csv import write_in_file
+from utils.time import time_counter
 
 
 def main() -> None:
-    number = int(''.join([str(randrange(10)) for _ in range(int(input()))]))
-    get_number_multipliers(number)
+    start_number_len = int(input('Начальная длина числа: '))
+    end_number_len = int(input('Конечная длина числа: '))
 
+    data = [['number', 'multipliers', 'spent_time', 'ln(m)/n']]
 
-def time_counter(func: Callable) -> Callable:
-    def wrapper(number: int) -> list:
-        start = perf_counter()
-        multipliers = func(number)
-        end = perf_counter()
+    for number_len in range(start_number_len, end_number_len + 1):
+        number = int(''.join((str(randrange(10)) for _ in range(number_len))))
+        multipliers, spent_time = get_number_multipliers(number)
+        progress = log(number_len / spent_time)
 
-        spent_time = end - start
+        data.append([number, multipliers, spent_time, progress])
 
-        with open('results.txt', 'a') as file:
-            file.write(
-                f'number: {number}, '
-                f'{multipliers = }, '
-                f'time: {spent_time}, '
-                f'ln(m)/n: {log(len(str(number))) / spent_time}\n'
-            )
-
-        return multipliers
-
-    return wrapper
+    write_in_file(data, 'statistic.csv')
 
 
 @time_counter
