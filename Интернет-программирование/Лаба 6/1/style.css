@@ -1,0 +1,131 @@
+.nav{
+	background-color:#C499D5;
+	box-shadow:5px 5px gray;
+    border-radius: 8px;
+	font-size:25px;
+	padding:5px;
+	height:35px;
+}
+
+.links{
+	display:block;
+	float:left;
+	text-decoration:none;
+	padding:5px;
+    border-radius: 8px;
+	background-color:#B061D1;
+	border-right-style:groove;
+	border-right-color:#C499D5;
+}
+
+.links:hover{
+	background-color:cyan;
+}
+
+.allmain { 
+    text-align:justify;
+}
+
+.LBlock { 
+    display: block; 
+    float: left; 
+    width: 9%; 
+    background: linear-gradient(to bottom, #c9b2d8, rgb(165, 113, 196));   
+    box-shadow: 5px 3px gray; 
+    padding: 5px; 
+    border-radius: 8px; 
+    margin-right: 10px; 
+}
+
+.Lmain { 
+    margin: 6px; 
+    background: linear-gradient(to bottom, #c9b2d8, rgb(217, 193, 230)); 
+    box-shadow: 3px 1px gray; 
+    padding: 3px; 
+    border-radius: 8px; 
+    font-size: 17px; 
+    overflow: hidden; 
+}
+
+#Ltitle { 
+    background-color: #b770d3; 
+    text-align: center;  
+    font-weight: bold; 
+    border-radius: 7px;   
+}
+
+.RBlock { 
+    display: block; 
+    float: right; 
+    width: 11%; 
+    background: linear-gradient(to bottom, #c9b2d8, rgb(165, 113, 196));   
+    box-shadow: 5px 3px gray; 
+    padding: 5px; 
+    border-radius: 8px; 
+    margin-left: 10px; 
+}
+
+.Rmain {
+    margin: 6px;
+    background: linear-gradient(to bottom, #c9b2d8, rgb(217, 193, 230));
+    box-shadow: 3px 1px gray;
+    padding: 3px;
+    border-radius: 8px;
+    font-size: 17px;
+    overflow: hidden;
+}
+
+#Rtitle { 
+    background-color: #b770d3; 
+    text-align: center;  
+    font-weight: bold; 
+    border-radius: 7px;   
+}
+
+.CBlock { 
+    overflow: hidden; 
+    margin-top: 9px; 
+    background: linear-gradient(to bottom, #c9b2d8, rgb(165, 113, 196));   
+    box-shadow: 5px 3px gray; 
+    padding: 5px; 
+    border-radius: 8px; 
+}
+
+.card {
+    position: relative;
+    display: inline-block;
+    width: 160px;
+    height: 160px;
+    margin: 15px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#Ctitle { 
+    background-color: #b770d3; 
+    text-align: center;  
+    font-weight: bold; 
+    border-radius: 7px;   
+}
+
+.food-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.layer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -50%;
+    text-align: center;
+    font-size: 17px;
+    transition: bottom .4s; 
+    background-color: rgba(189, 117, 248, 0.425);
+    color: rgb(37, 4, 65);
+}
+
+.card:hover .layer {
+    bottom: 0;
+}

@@ -1,0 +1,56 @@
+.nav {
+    display:flex;
+    flex-direction: column;
+    background: linear-gradient(to bottom, #e1e1e1, rgb(173, 145, 206));
+    border-radius: 4px;
+    width: 220px;
+    box-shadow: 4px 2px rgb(122, 117, 133);
+}
+
+.link {
+    background: linear-gradient(to bottom, #e1e1e1, rgb(173, 145, 206));
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+    display: block;
+    border-radius: 4px;
+    padding: 10px  20px;
+    color: rgb(53, 8, 105);
+    text-transform: uppercase; 
+    font-weight: 600; 
+}
+
+.nav .link:hover {
+    background: linear-gradient(to bottom, rgb(215, 158, 241), rgb(151, 98, 212));
+}
+
+.nav div {   /* блоки содержащие выпадающие окна оборачиваем в отедельный блочный элемент */
+    font-size: 20px;  
+    text-align: center;  
+    display:flex;
+    flex-direction: column; 
+    position: relative; /*чтобы вложенный выпадающий блок позиционировался относительно этого элемента) */
+}
+
+.nav div .drop { /*блок для влож пунктов */
+    position: absolute;  /* вынимаем из нормального потока, чтобы отображать поверх другого контента*/  
+    display: none;
+    left:100%; 
+}
+
+.drop_item { 
+    text-decoration: none; 
+    display: block;
+    background: linear-gradient(to bottom, #e1e1e1, rgb(173, 145, 206));
+    color: black;   
+    border-radius: 4px;
+    padding: 10px  20px;
+}
+
+.drop_item:hover {
+    background: linear-gradient(to bottom, rgb(215, 158, 241), rgb(151, 98, 212));
+}
+
+.nav div:hover div { /* отображаем выпадающий блок при наведении */
+    display: block;
+}
