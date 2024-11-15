@@ -1,73 +1,41 @@
-.nav{
-	background-color:#C499D5;
-	box-shadow:5px 5px gray;
+.nav {
+	background-color: #3cb5f1;
+	box-shadow: 5px 5px #b0b0b0;
     border-radius: 8px;
-	font-size:25px;
-	padding:5px;
-	height:35px;
+	font-size: 25px;
+	padding: 5px;
+	height: 35px;
 }
 
-.links{
-	display:block;
-	float:left;
-	text-decoration:none;
-	padding:5px;
+.links {
+	display: block;
+	float: left;
+	text-decoration: none;
+	padding: 5px;
     border-radius: 8px;
-	background-color:#B061D1;
-	border-right-style:groove;
-	border-right-color:#C499D5;
+	background-color: #ffffff;
+	border-right-style: groove;
+	border-right-color: #000000;
 }
 
-.links:hover{
-	background-color:cyan;
+.links:hover {
+	background-color: cyan;
 }
 
-.allmain { 
-    text-align:justify;
+.LBlock {
+    display: block;
+    float: left;
+    width: 9%;
+    background: linear-gradient(to bottom, #3cb5f1, rgb(35, 35, 35));
+    box-shadow: 5px 3px gray;
+    padding: 5px;
+    border-radius: 8px;
+    margin-right: 10px;
 }
 
-.LBlock { 
-    display: block; 
-    float: left; 
-    width: 9%; 
-    background: linear-gradient(to bottom, #c9b2d8, rgb(165, 113, 196));   
-    box-shadow: 5px 3px gray; 
-    padding: 5px; 
-    border-radius: 8px; 
-    margin-right: 10px; 
-}
-
-.Lmain { 
-    margin: 6px; 
-    background: linear-gradient(to bottom, #c9b2d8, rgb(217, 193, 230)); 
-    box-shadow: 3px 1px gray; 
-    padding: 3px; 
-    border-radius: 8px; 
-    font-size: 17px; 
-    overflow: hidden; 
-}
-
-#Ltitle { 
-    background-color: #b770d3; 
-    text-align: center;  
-    font-weight: bold; 
-    border-radius: 7px;   
-}
-
-.RBlock { 
-    display: block; 
-    float: right; 
-    width: 11%; 
-    background: linear-gradient(to bottom, #c9b2d8, rgb(165, 113, 196));   
-    box-shadow: 5px 3px gray; 
-    padding: 5px; 
-    border-radius: 8px; 
-    margin-left: 10px; 
-}
-
-.Rmain {
+.Lmain {
     margin: 6px;
-    background: linear-gradient(to bottom, #c9b2d8, rgb(217, 193, 230));
+    background: linear-gradient(to bottom, #3cb5f1, rgb(0, 255, 255));
     box-shadow: 3px 1px gray;
     padding: 3px;
     border-radius: 8px;
@@ -75,20 +43,48 @@
     overflow: hidden;
 }
 
-#Rtitle { 
-    background-color: #b770d3; 
-    text-align: center;  
-    font-weight: bold; 
-    border-radius: 7px;   
+#Ltitle {
+    background-color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 7px;
 }
 
-.CBlock { 
-    overflow: hidden; 
-    margin-top: 9px; 
-    background: linear-gradient(to bottom, #c9b2d8, rgb(165, 113, 196));   
-    box-shadow: 5px 3px gray; 
-    padding: 5px; 
-    border-radius: 8px; 
+.RBlock {
+    display: block;
+    float: right;
+    width: 11%;
+    background: linear-gradient(to bottom, #3cb5f1, rgb(35, 35, 35));
+    box-shadow: 5px 3px gray;
+    padding: 5px;
+    border-radius: 8px;
+    margin-left: 10px;
+}
+
+.Rmain {
+    margin: 6px;
+    background: linear-gradient(to bottom, #3cb5f1, rgb(0, 255, 255));
+    box-shadow: 3px 1px gray;
+    padding: 3px;
+    border-radius: 8px;
+    font-size: 17px;
+    overflow: hidden;
+}
+
+#Rtitle {
+    background-color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 7px;
+}
+
+.CBlock {
+    overflow: hidden;
+    margin-top: 9px;
+    background: linear-gradient(to bottom, #3cb5f1, rgb(35, 35, 35));
+    box-shadow: 5px 3px gray;
+    padding: 5px;
+    border-radius: 8px;
 }
 
 .card {
@@ -101,11 +97,11 @@
     overflow: hidden;
 }
 
-#Ctitle { 
-    background-color: #b770d3; 
-    text-align: center;  
-    font-weight: bold; 
-    border-radius: 7px;   
+#Ctitle {
+    background-color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 7px;
 }
 
 .food-image {
@@ -121,9 +117,9 @@
     bottom: -50%;
     text-align: center;
     font-size: 17px;
-    transition: bottom .4s; 
-    background-color: rgba(189, 117, 248, 0.425);
-    color: rgb(37, 4, 65);
+    transition: bottom .4s;
+    background-color: rgba(255, 255, 255, 0.85);
+    color: rgb(9, 9, 9);
 }
 
 .card:hover .layer {

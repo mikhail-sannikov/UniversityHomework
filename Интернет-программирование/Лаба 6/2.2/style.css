@@ -8,54 +8,54 @@
 }
 
 .link {
-    background: linear-gradient(to bottom, #e1e1e1, rgb(173, 145, 206));
+    background: linear-gradient(to bottom, #e1e1e1, rgb(60, 181, 241));
     text-decoration: none;
     font-size: 20px;
     text-align: center;
     display: block;
     border-radius: 4px;
     padding: 10px  20px;
-    color: rgb(53, 8, 105);
-    text-transform: uppercase; 
-    font-weight: 600; 
+    color: rgb(93, 0, 0);
+    text-transform: uppercase;
+    font-weight: 600;
 }
 
 .nav .link:hover {
-    background: linear-gradient(to bottom, rgb(215, 158, 241), rgb(151, 98, 212));
+    background: linear-gradient(to bottom, rgb(60, 181, 241), rgb(14, 36, 178));
 }
 
-.nav div {   /* блоки содержащие выпадающие окна оборачиваем в отедельный блочный элемент */
-    font-size: 20px;  
-    text-align: center;  
+.nav div {
+    font-size: 20px;
+    text-align: center;
     display:flex;
     flex-direction: column;
-    position: relative; /*чтобы вложенный выпадающий блок позиционировался относительно этого элемента) */
+    position: relative;  /* чтобы вложенный выпадающий блок позиционировался относительно этого элемента) */
 }
 
-.nav div .drop { /*блок для влож пунктов */
-    position: absolute;  /* вынимаем из нормального потока, чтобы отображать поверх другого контента*/  
+.nav div .drop {
+    position: absolute;  /* отображаем поверх другого контента */
     display: none;
-    left:100%; 
+    left:100%;
 }
 
-.drop_item { 
-    text-decoration: none; 
+.drop_item {
+    text-decoration: none;
     display: block;
-    background: linear-gradient(to bottom, #e1e1e1, rgb(173, 145, 206));
-    color: black;   
+    background: linear-gradient(to bottom, #e1e1e1, rgb(60, 181, 241));
+    color: black;
     border-radius: 4px;
     padding: 10px  20px;
 }
 
 .drop_item:hover {
-    background: linear-gradient(to bottom, rgb(215, 158, 241), rgb(151, 98, 212));
+    background: linear-gradient(to bottom, rgb(60, 181, 241), rgb(14, 36, 178));
 }
 
-.nav div:hover .drop{ /* отображаем выпадающий блок при наведении */
+.nav div:hover .drop {  /* отображаем выпадающий блок при наведении */
     display: block;
 }
 
-.nav  div .drop  div:hover .drop { 
+.nav  div .drop  div:hover .drop {
     display: block;
     position: absolute;
     left: 100%;

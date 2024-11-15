@@ -8,46 +8,46 @@
 }   
 
 .link {
-    background: linear-gradient(to bottom, #e1e1e1, rgb(173, 145, 206));
+    background: linear-gradient(to bottom, #e1e1e1, rgb(60, 181, 241));
     text-decoration: none;
     font-size: 20px;
     text-align: center;
     display: block;
     border-radius: 4px;
-    padding: 10px  20px;
-    color: rgb(53, 8, 105);
-    text-transform: uppercase; 
-    font-weight: 600; 
+    padding: 10px 20px;
+    color: rgb(93, 0, 0);
+    text-transform: uppercase;
+    font-weight: 600;
 }
 
 .nav .link:hover {
-    background: linear-gradient(to bottom, rgb(215, 158, 241), rgb(151, 98, 212));
+    background: linear-gradient(to bottom, rgb(60, 181, 241), rgb(14, 36, 178));
 }
 
 .nav div {
-    font-size: 20px;  
-    text-align: center;  
+    font-size: 20px;
+    text-align: center;
     display:flex;
-    flex-direction: column; 
+    flex-direction: column;
 }
 
-.nav div .drop { 
+.nav div .drop {
     display: none;
-}  
+}
 
-.drop_item { 
-    text-decoration: none; 
+.drop_item {
+    text-decoration: none;
     display: block;
-    background: linear-gradient(to bottom, #e1e1e1, rgb(173, 145, 206));
-    color: black;   
+    background: linear-gradient(to bottom, #e1e1e1, rgb(60, 181, 241));
+    color: black;
     border-radius: 4px;
     padding: 10px  20px;
- }
+}
 
 .drop_item:hover {
-    background: linear-gradient(to bottom, rgb(215, 158, 241), rgb(151, 98, 212));
- }
+    background: linear-gradient(to bottom, rgb(60, 181, 241), rgb(14, 36, 178));
+}
 
-.nav div:hover div { 
+.nav div:hover div {
     display: block;
 }
