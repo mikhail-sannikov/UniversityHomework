@@ -1,3 +1,7 @@
+body {
+    background: #263238;
+}
+
 .nav {
 	background-color: #3cb5f1;
 	box-shadow: 5px 5px #b0b0b0;
@@ -22,18 +26,18 @@
 	background-color: cyan;
 }
 
-.LBlock {
+.left_block {
     display: block;
     float: left;
     width: 9%;
     background: linear-gradient(to bottom, #3cb5f1, rgb(35, 35, 35));
-    box-shadow: 5px 3px gray;
+    box-shadow: 5px 3px #ffffff;
     padding: 5px;
     border-radius: 8px;
     margin-right: 10px;
 }
 
-.Lmain {
+.left_menu {
     margin: 6px;
     background: linear-gradient(to bottom, #3cb5f1, rgb(0, 255, 255));
     box-shadow: 3px 1px gray;
@@ -43,25 +47,25 @@
     overflow: hidden;
 }
 
-#Ltitle {
+#left_title {
     background-color: #ffffff;
     text-align: center;
     font-weight: bold;
     border-radius: 7px;
 }
 
-.RBlock {
+.right_block {
     display: block;
     float: right;
     width: 11%;
     background: linear-gradient(to bottom, #3cb5f1, rgb(35, 35, 35));
-    box-shadow: 5px 3px gray;
+    box-shadow: 5px 3px #ffffff;
     padding: 5px;
     border-radius: 8px;
     margin-left: 10px;
 }
 
-.Rmain {
+.right_menu {
     margin: 6px;
     background: linear-gradient(to bottom, #3cb5f1, rgb(0, 255, 255));
     box-shadow: 3px 1px gray;
@@ -71,14 +75,14 @@
     overflow: hidden;
 }
 
-#Rtitle {
+.right_title {
     background-color: #ffffff;
     text-align: center;
     font-weight: bold;
     border-radius: 7px;
 }
 
-.CBlock {
+.center_block {
     overflow: hidden;
     margin-top: 9px;
     background: linear-gradient(to bottom, #3cb5f1, rgb(35, 35, 35));
@@ -93,32 +97,30 @@
     width: 160px;
     height: 160px;
     margin: 15px;
-    border-radius: 5px;
+    border-radius: 15px;
     overflow: hidden;
 }
 
-#Ctitle {
+#center_title {
     background-color: #ffffff;
     text-align: center;
     font-weight: bold;
     border-radius: 7px;
 }
 
-.food-image {
+.snickers {
     width: 100%;
     height: 100%;
-    border-radius: 5px;
 }
 
 .layer {
     position: absolute;
-    left: 0;
-    right: 0;
+    width: inherit;
     bottom: -50%;
     text-align: center;
     font-size: 17px;
     transition: bottom .4s;
-    background-color: rgba(255, 255, 255, 0.85);
+    background-color: rgba(215, 215, 215, 0.85);
     color: rgb(9, 9, 9);
 }
 
