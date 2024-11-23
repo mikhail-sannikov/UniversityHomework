@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #2c3e50;
+}
+
+#main {
+    display: flex;
+    justify-content: center;
+}
+
+#header {
+    width: 1170px;
+    position: absolute;
+    top: 0;
+}
+
+#header_bg {
+    width: 100%;
+}
+
+#header_logo {
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+#header_dividor {
+    margin-left: 30px;
+    margin-top: 40px;
+}
+
+#header_nav {
+    /*шрифт*/
+    width: 675px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 17pt;
+    /*позиционирование*/
+    margin-left: 260px;
+    margin-right: 35px;
+    margin-top: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_link {
+    transition: .3s;
+}
+
+#logo_with_nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+#login_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#login_button a {
+    position: absolute;
+}
+
+#login_button a:hover {
+    color: white;
+    font-size: calc(1em + 1pt);
+    transition: none;
+}
