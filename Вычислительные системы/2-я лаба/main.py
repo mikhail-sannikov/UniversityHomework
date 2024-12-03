@@ -12,15 +12,21 @@ def main() -> None:
     x = np.array(data['x'])
     y = np.array(data['y'])
 
-    # !!!
-    n, a_exp, b_exp, sum_x, sum_y, sum_x2 = algorithms.first_approximation(x, y)
-    sum_y_linear, sum_xy_linear = algorithms.second_approximation(x, y)
+    x_exp = x[y > 0]  # поскольку логарифм можно взять только от положительных значений
+    y_exp = y[y > 0]
 
-    a_linear, b_linear = algorithms.get_linear_values(n, sum_x, sum_y_linear, sum_xy_linear, sum_x2)
-    y_approx_exp, y_approx_linear = algorithms.get_approximation_values(x, a_exp, a_linear, b_exp, b_linear)
-    # !!!
+    n = len(x_exp)
+    ln_y = np.log(y_exp)  # линеаризуем через логарифм для МНК
 
-    smoothed_exp, smoothed_linear = algorithms.get_smoothed_values(y_approx_exp, y_approx_linear)
+    sum_x = np.sum(x_exp)
+    sum_y = np.sum(ln_y)
+    sum_x2 = np.sum(x_exp ** 2)
+    sum_xy = np.sum(x_exp * ln_y)
+
+    # аппроксимация методом наименьших квадратов
+    y_approx_exp, a_exp, b_exp = algorithms.first_approximation(n, x, sum_x, sum_x2, sum_y, sum_xy)
+    y_approx_linear, a_linear, b_linear = algorithms.second_approximation(n, x, y, sum_x, sum_x2)
+
     sigma_exp, sigma_linear = algorithms.get_square_deviation(y, y_approx_exp, y_approx_linear)
 
     print('y = a * e^(b * x):')
@@ -40,8 +46,6 @@ def main() -> None:
         a_linear,
         b_exp,
         b_linear,
-        smoothed_exp,
-        smoothed_linear,
         sigma_exp,
         sigma_linear,
     )

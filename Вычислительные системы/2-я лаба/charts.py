@@ -10,8 +10,6 @@ def draw_chart(
     a_linear,
     b_exp,
     b_linear,
-    smoothed_exp,
-    smoothed_linear,
     sigma_exp,
     sigma_linear,
 ) -> None:
@@ -24,15 +22,12 @@ def draw_chart(
         label=f'Экспоненциальная аппроксимация: y = {a_exp:.3f} * e^({b_exp:.3f}x), σ = {sigma_exp:.3f}',
         color='green',
     )
-    plt.plot(x, smoothed_exp, label='Сглаженная экспоненциальная аппроксимация', color='lightgreen', linestyle='dashed')
-
     plt.plot(
         x,
         y_approx_linear,
         label=f'Линейная аппроксимация: y = {a_linear:.3f}x + {b_linear:.3f}, σ = {sigma_linear:.3f}',
         color='red',
     )
-    plt.plot(x, smoothed_linear, label='Сглаженная линейная аппроксимация', color='orange', linestyle='dashed')
 
     plt.xlabel('x')
     plt.ylabel('y')
