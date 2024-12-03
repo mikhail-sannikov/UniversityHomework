@@ -1,0 +1,415 @@
+/*global*/
+body {
+    margin: 0;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #494949;
+    transition: .3s;
+}
+
+.working_area {
+    display: flex;
+    justify-content: center;
+}
+
+/*header*/
+#header {
+    width: 1110px;
+    height: 935px;
+    position: absolute;
+    top: 0;
+}
+
+#header_bg {
+    width: 100%;
+}
+
+#header_headphones {
+    position: absolute;
+    filter: drop-shadow(5px 25px 15px rgba(0, 0, 0, 0.5));
+}
+
+.header_pencil {
+    position: absolute;
+    margin-top: 700px;
+    filter: drop-shadow(3px 2px 2px rgba(0, 0, 0, 0.5));
+}
+
+#header_pencil_1 {
+    margin-top: 755px;
+}
+
+#header_airpods {
+    position: absolute;
+    filter: drop-shadow(3px 8px 2px rgba(0, 0, 0, 0.5));
+    right: 0;
+    margin-top: 425px;
+}
+
+#header_logo {
+    margin-top: 50px;
+}
+
+#header_dividor {
+    margin-top: 40px;
+}
+
+#header_nav {
+    /*шрифт*/
+    width: 675px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 17pt;
+    /*позиционирование*/
+    margin-left: 260px;
+    margin-right: 5px;
+    margin-top: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo_with_nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+#login_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#login_button a {
+    position: absolute;
+}
+
+#login_button a:hover {
+    color: white;
+    font-size: calc(1em + 1pt);
+    transition: none;
+}
+
+#header_phrase {
+    /*шрифт*/
+    font-family: "Museo Slab", sans-serif;
+    font-weight: 500;
+    font-size: 40pt;
+    color: white;
+    /*позиционирование*/
+    margin-top: 265px;
+}
+
+#header_description {
+    /*шрифт*/
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 26pt;
+    color: white;
+    /*позиционирование*/
+    width: 500px;
+    margin-top: 45px;
+}
+
+#header_buttons {
+    width: 510px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 75px;
+}
+
+#google_store_link {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 16pt;
+    color: #343434;
+}
+
+#learn_more_link {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 16pt;
+    position: absolute;
+    color: white;
+}
+
+#header_button_google {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+#header_button_google:hover {
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+    transition: .3s;
+}
+
+#header_btn_google_items {
+    position: absolute;
+    width: 175px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header_button_learn_more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+#header_button_learn_more:hover {
+    box-shadow: 0 0 15px rgb(60, 181, 241);
+    transition: .3s;
+}
+
+/*services*/
+#services {
+    width: 1110px;
+    height: 800px;
+}
+
+#welcome_text {
+    font-family: "Roboto Slab", serif;
+    margin-top: 98px;
+    text-align: center;
+}
+
+#welcome_to_text {
+    font-size: 18pt;
+    color: #7c7c7c;
+}
+
+#our_services_text {
+    font-size: 24pt;
+    color: #494949;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+#services_images {
+    display: flex;
+    justify-content: space-between;
+    margin: 95px 100px 20px;
+}
+
+#services_description {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.service_description {
+    width: 300px;
+    height: 115px;
+}
+
+.service_description h3 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 18pt;
+    color: #494949;
+}
+
+.service_description p {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 14pt;
+    color: #7c7c7c;
+}
+
+/*unlimited_customization*/
+#unlimited_customization {
+    width: 1110px;
+    height: 780px;
+    position: absolute;
+}
+
+#uc_bg {
+    width: 100%;
+}
+
+#uc_devices {
+    margin-top: 120px;
+    position: absolute;
+}
+
+#great_features_text {
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 22pt;
+    color: #494949;
+    opacity: 35%;
+    margin-top: 140px;
+    margin-left: 550px;
+}
+
+#uc_text {
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 32pt;
+    color: #494949;
+    margin-top: 35px;
+    margin-left: 550px;
+}
+
+#unlimited_customization p {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 20pt;
+    color: #7c7c7c;
+    margin-top: 35px;
+    margin-left: 550px;
+}
+
+#uc_list {
+    margin-top: 70px;
+    margin-left: 550px;
+    list-style-image: url("references/unlimited_customization/point.png");
+    line-height: 30pt;
+    padding: 25px;
+    text-indent: 20px;
+}
+
+#uc_list li {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 14pt;
+    color: #7c7c7c;
+}
+
+#uc_button {
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 550px;
+}
+
+#uc_button a {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 12pt;
+    position: absolute;
+}
+
+#uc_button img {
+    width: 100%;
+    height: auto;
+}
+
+/*other_services*/
+#other_services {
+    width: 1110px;
+    height: auto;
+}
+
+#os_header_text {
+    font-family: "Roboto Slab", serif;
+    text-align: center;
+    margin-top: 55px;
+}
+
+#view_our_latest_text {
+    font-size: 18pt;
+    color: #7c7c7c;
+}
+
+#os_header_text h3 {
+    font-size: 24pt;
+    color: #494949;
+    margin: 10px;
+}
+
+#os_table {
+    width: 1085px;
+    height: 420px;
+    margin-top: 115px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 175px 0;
+}
+
+.os_table_item {
+    width: 310px;
+    height: 155px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.os_table_item h4 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 18pt;
+    color: #494949;
+    display: inline;
+}
+
+.os_table_item p {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 14pt;
+    color: #7c7c7c;
+    line-height: 26pt;
+}
+
+.os_table_item_text {
+    width: 255px;
+}
+
+/*custom_comments*/
+#custom_comments {
+    width: 1110px;
+    height: auto;
+    position: absolute;
+    margin-top: 220px;
+}
+
+#custom_comments_bg {
+    width: 100%;
+    margin-top: 220px;
+}
+
+#cc_header_text {
+    font-family: "Roboto Slab", serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#cc_header_text div {
+    font-size: 18pt;
+    color: #7c7c7c;
+}
+
+#cc_header_text h3 {
+    font-size: 24pt;
+    color: #494949;
+    margin: 10px;
+}
+
+#cc_cards {
+    width: inherit;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 110px;
+}
+
+#cc_first_card {
+    position: absolute;
+}
+
+#cc_second_card {
+    position: absolute;
+}

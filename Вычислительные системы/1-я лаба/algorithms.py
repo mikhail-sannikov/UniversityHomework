@@ -23,7 +23,7 @@ def newton_interpolation(x: np.array, y: np.array, x_point: float) -> None:
     t = 1
 
     for i in range(1, n):
-        t *= (q + i - 1)
+        t *= q + i - 1
         result += (t / factorial(i)) * diff_table[n - i - 1, i]
 
     return result
