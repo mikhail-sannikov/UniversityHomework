@@ -5,3 +5,5 @@ matplotlib==3.9.2
 
 # линтеры
 ruff==0.7.4
+
+icecream==2.1.3
