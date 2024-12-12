@@ -19,6 +19,41 @@ a:hover {
 }
 
 /*header*/
+@media (max-width: 1130px) {
+    #header {
+        width: auto !important;
+    }
+    #header_dividor {
+        display: none;
+    }
+    #header_headphones {
+        display: none;
+    }
+    #header_airpods {
+        display: none;
+    }
+    .header_pencil {
+        display: none;
+    }
+    #header_logo {
+        display: none;
+    }
+    #header_phrase {
+        text-align: center;
+    }
+    #header_description_area {
+        display: flex;
+        justify-content: center;
+    }
+    #header_description {
+        width: 800px !important;
+    }
+    #header_buttons_area {
+        display: flex;
+        justify-content: center;
+    }
+}
+
 #header {
     width: 1110px;
     height: 935px;
@@ -173,6 +208,12 @@ a:hover {
 }
 
 /*services*/
+@media (max-width: 1100px) {
+    #services {
+        width: auto !important;
+    }
+}
+
 #services {
     width: 1110px;
     height: 800px;
@@ -228,6 +269,30 @@ a:hover {
 }
 
 /*unlimited_customization*/
+@media (max-width: 1360px) {
+    #unlimited_customization {
+        width: auto !important;
+    }
+    #uc_devices {
+        display: none;
+    }
+    #great_features_text {
+        margin-left: 100px !important;
+    }
+    #uc_text {
+        margin-left: 100px !important;
+    }
+    #unlimited_customization p {
+        margin-left: 100px !important;
+    }
+    #uc_list {
+        margin-left: 100px !important;
+    }
+    #uc_button {
+        margin-left: 100px !important;
+    }
+}
+
 #unlimited_customization {
     width: 1110px;
     height: 780px;
@@ -310,6 +375,16 @@ a:hover {
 }
 
 /*other_services*/
+@media (max-width: 1100px) {
+    #other_services {
+        width: 800px !important;
+    }
+    #os_table {
+        width: 800px !important;
+        height: 900px !important;
+    }
+}
+
 #other_services {
     width: 1110px;
     height: auto;
@@ -370,6 +445,12 @@ a:hover {
 }
 
 /*custom_comments*/
+@media (max-width: 1100px) {
+    #custom_comments {
+        width: auto !important;
+    }
+}
+
 #custom_comments {
     width: 1110px;
     height: auto;
@@ -485,6 +566,23 @@ a:hover {
 }
 
 /*great resource*/
+@media (max-width: 1100px) {
+    #great_resource {
+        width: auto !important;
+    }
+
+    #gr_text {
+        text-align: center;
+        width: auto !important;
+    }
+    #gr_text_article {
+        height: 200px !important;
+    }
+    #gr_img {
+        display: none;
+    }
+}
+
 #great_resource {
     width: 1110px;
     height: 800px;
@@ -529,6 +627,20 @@ a:hover {
 }
 
 /*pricing_table*/
+@media (max-width: 1110px) {
+    #pricing_table {
+        width: auto !important;
+        height: 2500px !important;
+    }
+    #pricing_table_bg {
+        height: 2500px !important;
+    }
+    #pt_cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 #pricing_table {
     width: 1110px;
     height: 1000px;
@@ -656,4 +768,182 @@ a:hover {
     font-weight: 700;
     font-size: 14pt;
     position: absolute;
+}
+
+/*subscribe*/
+@media (max-width: 1100px) {
+    #subscribe {
+        width: auto !important;
+    }
+}
+
+#subscribe {
+    width: 1110px;
+    height: 630px;
+}
+
+#subscribe_header_text {
+    font-family: "Roboto Slab", serif;
+    text-align: center;
+    margin-top: 70px;
+}
+
+#subscribe_header_text div {
+    font-size: 18pt;
+    color: #7c7c7c;
+}
+
+#subscribe_header_text h3 {
+    font-size: 24pt;
+    color: #494949;
+    margin: 5px;
+}
+
+.subscribe_field {
+    display: flex;
+    justify-content: center;
+}
+
+.subscribe_field input {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 14pt;
+    color: #494949;
+    position: absolute;
+    width: 220px;
+    height: 75px;
+    border: none;
+    background-color: transparent;
+}
+
+.subscribe_field input::placeholder {
+    color: #7c7c7c;
+    text-align: center;
+}
+
+.subscribe_field input:focus {
+    outline: none;
+}
+
+.subscribe_field input:focus::placeholder {
+    color: transparent;
+    transition: .2s;
+}
+
+#subscribe_field_name {
+    margin-top: 70px;
+}
+
+#subscribe_field_email {
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+
+#subscribe_btn_link {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 14pt;
+    width: 400px;
+    height: 82px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*footer*/
+@media (max-width: 1210px) {
+    #footer {
+        width: auto !important;
+    }
+    .footer_dividor {
+        display: none;
+    }
+    #footer_info {
+        flex-wrap: wrap;
+        margin-top: 10px !important;
+    }
+    #footer_links {
+        width: auto !important;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    footer {
+        margin-top: 320px !important;
+    }
+}
+
+#footer {
+    width: 1130px;
+    height: 490px;
+}
+
+#footer_info {
+    height: 270px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#footer_links {
+    width: 210px;
+    height: 325px;
+}
+
+#footer_links p {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 14pt;
+    line-height: 20pt;
+    color: #7c7c7c;
+}
+
+#footer_links_logos {
+    width: 115px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer_text {
+    font-family: "Raleway", sans-serif;
+    width: 825px;
+    height: 325px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer_text h3 {
+    font-weight: 700;
+    font-size: 14pt;
+    color: #494949;
+    margin: 0 0 45px;
+}
+
+#footer_text p {
+    font-weight: 500;
+    font-size: 14pt;
+    line-height: 23pt;
+    color: #7c7c7c;
+}
+
+#footer_text a {
+    color: inherit;
+}
+
+#footer_text a:hover {
+    color: black;
+    transition: .3s;
+}
+
+footer {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 14pt;
+    color: #7c7c7c;
+    margin-top: 30px;
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
 }
