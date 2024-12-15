@@ -1,4 +1,5 @@
 import math
+from typing import Optional
 
 # Константы
 g = 9.81  # ускорение свободного падения, м/с^2
@@ -8,7 +9,7 @@ rho_s = 7874  # плотность железа, кг/м^3
 mu = 0.014  # вязкость воды, Н·с/м^2
 
 
-def f(v):
+def f(v: float) -> float:
     Re = (rho * d * v) / mu  # число Рейнольдса
     Cd = 24 / Re + 3 / math.sqrt(Re) + 0.34  # коэффициент сопротивления
     lhs = g * (rho_s - rho) * d / (3 * Cd * rho)  # левая часть уравнения
@@ -16,7 +17,7 @@ def f(v):
     return lhs - rhs
 
 
-def find_interval(start, end, step=0.01):
+def find_interval(start: float, end: float, step: float = 0.01) -> tuple[float, float]:
     x = start
 
     while x < end:
@@ -27,10 +28,10 @@ def find_interval(start, end, step=0.01):
     raise ValueError('Нет интервала, в котором функция меняет знак')
 
 
-def bisection_method(a, b, tol=1e-6, max_iter=100):
+def bisection_method(a: float, b: float, tol: float = 1e-6, max_iter: int = 100) -> Optional[float]:
     if f(a) * f(b) > 0:
-        print("Функция имеет одинаковые знаки на концах интервала.")
-        return None
+        print('Функция имеет одинаковые знаки на концах интервала.')
+        return
 
     iter_count = 0
 
@@ -47,7 +48,7 @@ def bisection_method(a, b, tol=1e-6, max_iter=100):
     return (a + b) / 2
 
 
-def secant_method(v0, v1, tol=1e-6, max_iter=100):
+def secant_method(v0: float, v1: float, tol: float = 1e-6, max_iter: int = 100) -> Optional[float]:
     iter_count = 0
 
     while iter_count < max_iter:
@@ -61,7 +62,7 @@ def secant_method(v0, v1, tol=1e-6, max_iter=100):
         iter_count += 1
 
 
-def main():
+def main() -> None:
     while True:
         match input('Хотите задать параметры самостоятельно? (y/n): ').lower():
             case 'y':
@@ -88,16 +89,12 @@ def main():
     print(f'Интервал поиска корней: [{a}, {b}]')
 
     v_bisection = bisection_method(a, b, max_iter=bisection_max_iter)
-    print(f"Метод половинного деления: v = {v_bisection:.8f} м/с")
+    print(f'Метод половинного деления: v = {v_bisection:.8f} м/с')
 
     v_secant = secant_method(v0, v1, max_iter=secant_max_iter)
-    print(f"Метод хорд: v = {v_secant:.8f} м/с")
+    print(f'Метод хорд: v = {v_secant:.8f} м/с')
 
-    print(
-        'Метод хорд быстрее'
-        if v_secant < v_bisection
-        else 'Метод половинного деления быстрее'
-    )
+    print('Метод хорд быстрее' if v_secant < v_bisection else 'Метод половинного деления быстрее')
 
 
 if __name__ == '__main__':
