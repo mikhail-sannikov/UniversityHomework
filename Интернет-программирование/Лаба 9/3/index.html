@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>9.3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Вычисление выражений</h1>
+    <form id="calcForm">
+        <div>
+            <label for="a">a:</label>
+            <input type="number" id="a" name="a">
+        </div>
+        <div>
+            <label for="b">b:</label>
+            <input type="number" id="b" name="b">
+        </div>
+        <div>
+            <label for="c">c:</label>
+            <input type="number" id="c" name="c">
+        </div>
+        <div>
+            <label for="d">d:</label>
+            <input type="number" id="d" name="d">
+        </div>
+        <div>
+            <label for="x">x (в радианах):</label>
+            <input type="number" id="x" name="x">
+        </div>
+        <div>
+            <label for="y">y (в радианах):</label>
+            <input type="number" id="y" name="y">
+        </div>
+        <button type="button" id="calculateBtn" onclick="calcAns()">Вычислить</button>
+    </form>
+    <h2>Результаты</h2>
+    <p>Answer 1: <span id="result1"></span></p>
+    <p>Answer 2: <span id="result2"></span></p>
+    <p>Answer 3: <span id="result3"></span></p>
+    <p>Answer 4: <span id="result4"></span></p>
+    <script src="main.js"></script>
+</body>
+</html>
