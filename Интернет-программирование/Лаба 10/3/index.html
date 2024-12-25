@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анкета студента</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="header_area">
+    <h1>Анкета студента</h1>
+</div>
+<div id="form_area">
+    <form id="student_form">
+        <label for="fio">ФИО:</label><br>
+        <input type="text" id="fio" name="fio"><br><br>
+        <label for="birthYear">Год рождения:</label><br>
+        <input type="number" id="birthYear" name="birthYear" min="1900" max="2024"><br><br>
+        <label>Пол:</label><br>
+        <input type="radio" id="male" name="gender" value="Мужской">
+        <label for="male">Мужской</label><br>
+        <input type="radio" id="female" name="gender" value="Женский">
+        <label for="female">Женский</label><br><br>
+        <label for="faculty">Факультет:</label><br>
+        <select id="faculty" name="faculty">
+            <option value="">Выберите факультет</option>
+            <option value="Физико-математический">Физико-математический</option>
+            <option value="Гуманитарный">Гуманитарный</option>
+        </select><br><br>
+        <label for="specialty">Специальность:</label><br>
+        <input type="text" id="specialty" name="specialty"><br><br>
+        <label for="course">Курс:</label><br>
+        <select id="course" name="course">
+            <option value="">Выберите курс</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+        </select><br><br>
+        <label for="hobbies">Хобби:</label><br>
+        <textarea id="hobbies" name="hobbies"></textarea><br><br>
+        <label>Языки:</label><br>
+        <input type="checkbox" id="lang1" name="languages" value="Английский">
+        <label for="lang1">Русский</label><br>
+        <input type="checkbox" id="lang2" name="languages" value="Испанский">
+        <label for="lang2">Английский</label><br>
+        <input type="checkbox" id="lang3" name="languages" value="Французский">
+        <label for="lang3">Китайский</label><br><br>
+        <label>Музыкальные инструменты</label><br>
+        <input type="checkbox" id="instrument1" name="instruments" value="Фортепиано">
+        <label for="instrument1">Гусли</label><br>
+        <input type="checkbox" id="instrument2" name="instruments" value="Гитара">
+        <label for="instrument2">Гитара</label><br><br>
+        <label for="sports">Виды спорта, которые нравятся:</label><br>
+        <input type="text" id="sports" name="sports"><br><br>
+        <label for="color">Любимый цвет:</label><br>
+        <input type="color" id="color" name="color"><br><br>
+        <button id="send_btn" type="button" onclick="submitForm()">Отправить</button>
+    </form>
+</div>
+<div id="results"></div>
+<script src="main.js"></script>
+</body>
+</html>

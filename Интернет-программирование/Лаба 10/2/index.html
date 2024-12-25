@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>10.2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Тригонометрические функции</h1>
+    <div id="container">
+        <div>Угол должен быть больше нуля и меньше 90 градусов</div>
+        <div id="angle_input_area">
+            <span>Угол в градусах</span>
+            <label for="angle_input"></label>
+            <input id="angle_input" type="number" min="0" max="90">
+        </div>
+        <div>
+            <label for="function_selector">Функция ..........</label>
+            <select id="function_selector">
+                <option value="sin">синус</option>
+                <option value="cos">косинус</option>
+                <option value="tan">тангенс</option>
+            </select>
+        </div>
+        <div><button id="calculate_btn" onclick="handleCalculateBtn()">Вычислить</button></div>
+        <div id="calculate_result"></div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

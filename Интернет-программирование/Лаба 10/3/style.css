@@ -1,0 +1,52 @@
+body {
+    line-height: 1.5;
+    margin: 20px;
+    background-color: #494949;
+}
+
+h1 {
+    color: white;
+}
+
+#header_area {
+    display: flex;
+    justify-content: center;
+}
+
+#student_form {
+    width: 320px;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 0 10px black;
+}
+
+#form_area {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 75px;
+}
+
+#fio_in_genetive {
+    text-align: center;
+    color: white;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid black;
+    background-color: white;
+    margin-top: 20px;
+}
+
+th, td {
+    text-align: left;
+    border: 1px solid black;
+    padding: 8px;
+}
+
+tr:hover {
+    background-color: #494949;
+    color: white;
+    opacity: 50%;
+}
