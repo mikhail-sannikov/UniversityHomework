@@ -1,0 +1,5 @@
+ruff==0.8.4
+requests==2.32.3
+folium==0.19.2
+python-dotenv==1.0.1
+pillow==11.0.0

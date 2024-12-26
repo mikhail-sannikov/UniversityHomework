@@ -1,10 +1,11 @@
 import argparse
 
-def count_lines(file_name):
+
+def count_lines(file_name: str) -> int:
     try:
         with open(file_name) as file:
             return len(file.readlines())
-    except Exception as e:
+    except Exception:
         return 0
 
 

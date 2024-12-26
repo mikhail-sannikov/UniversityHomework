@@ -2,7 +2,7 @@ import csv
 
 author = input()
 
-with open('../media/4/data.csv') as input_file, open('../media/4/res.txt', 'w') as output_file:
+with open('media/4/data.csv') as input_file, open('media/4/res.txt', 'w') as output_file:
     reader = csv.reader(input_file)
 
     for row in list(reader)[1:]:

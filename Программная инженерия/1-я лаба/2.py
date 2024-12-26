@@ -1,4 +1,4 @@
-with open('../media/2/data.txt') as input_file, open('../media/2/res.txt', 'w') as output_file:
+with open('media/2/data.txt') as input_file, open('media/2/res.txt', 'w') as output_file:
     counter = 0
 
     for line in input_file.readlines():
